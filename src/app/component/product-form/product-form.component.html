@@ -1,0 +1,11 @@
+<h3>Product Save</h3>
+<form>
+
+  <input placeholder="Name" type="text" name="name" [(ngModel)]="product.name" />
+  <input placeholder="Description" type="text" name="description" [(ngModel)]="product.description" />
+  <input placeholder="Price" type="number" name="price" [(ngModel)]="product.price" />
+
+  <button (click)="save()">
+    Save
+  </button>
+</form>

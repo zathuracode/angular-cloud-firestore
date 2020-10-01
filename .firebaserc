@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "sql-demos-758b7": {
+      "hosting": {
+        "angular-cloud-firestore": [
+          "sql-demos-758b7"
+        ]
+      }
+    }
+  }
+}

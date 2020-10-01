@@ -1,0 +1,37 @@
+<h3>Products List</h3>
+
+<table border="1">
+ <tr>
+  <td>Name</td>
+  <td>Description</td>
+  <td>Price</td>
+  <td>Action</td>
+ </tr>
+
+ <tr *ngFor="let product of products">
+  <td>{{product.name}}</td>
+  <td>{{product.description}}</td>
+  <td>{{product.price}}</td>
+  <td>
+    <button (click)="delete(product)">
+      Delete
+    </button>
+    <button (click)="edit(product)">
+      Edit
+    </button>
+  </td>
+ </tr>
+
+</table>
+<br/>
+<div *ngIf="showForm">
+  <form>
+    <input placeholder="Name" type="text" name="name" [(ngModel)]="product.name" />
+    <input placeholder="Description" type="text" name="description" [(ngModel)]="product.description" />
+    <input placeholder="Price" type="number" name="price" [(ngModel)]="product.price" />
+
+    <button (click)="update()">
+      Update
+    </button>
+  </form>
+</div>

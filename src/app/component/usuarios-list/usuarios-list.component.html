@@ -1,0 +1,13 @@
+<table border="1">
+  <tr>
+    <td>Nombre</td>
+    <td>Salario</td>
+    <td>Activo</td>
+  </tr>
+
+  <tr *ngFor="let usuario of items | async">
+    <td>{{usuario.nombre}} </td>
+    <td>{{usuario.salario}}</td>
+    <td>{{usuario.activo}}</td>
+  </tr>
+</table>

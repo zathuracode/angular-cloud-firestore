@@ -117,8 +117,16 @@
               "devServerTarget": "angular-cloud-firestore:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
-    }},
-  "defaultProject": "angular-cloud-firestore"
+    }
+  },
+  "defaultProject": "angular-cloud-firestore",
+  "cli": {
+    "analytics": false
+  }
 }
